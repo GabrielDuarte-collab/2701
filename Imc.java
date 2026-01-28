@@ -1,8 +1,8 @@
 public class Imc {
-    public static void double calcularAreaRetangulo(double base, double altura) {
+    public static  double calcularAreaRetangulo(double base, double altura) {
     return base * altura;
    }
-    public static void double calcularPerimetroRetangulo(double base, double altura) {
+    public static double calcularPerimetroRetangulo(double base, double altura) {
     return 2 * (base + altura);
    }
    public static void main(String[] args) {
