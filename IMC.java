@@ -12,7 +12,7 @@ public class IMC {
             return "Abaixo do peso";
         } else if (imc >= 18.5 && imc <= 24.9) {
             return "Peso normal";
-        } else if (imc >= 25.0 && imc <= 29.9) {
+        } else if (imc >= 25.0 && imc <= 29.5) {
             return "Sobrepeso";
         } else {
             return "Obesidade";
@@ -21,8 +21,8 @@ public class IMC {
 
     
     public static void Resultado(String nome, double imc, String classificacao) {
-        System.out.println("Nome: " + nome);
-        System.out.println("IMC: " + imc);
+        System.out.println("nome: " + nome);
+        System.out.println("imc: " + imc);
         System.out.println("Classificação: " + classificacao);
     }
      public static void main(String[] args) {
@@ -35,9 +35,10 @@ public class IMC {
         System.out.printf("Digite sua altura: ");
         sc.nextInt();
 
-        double peso = 0;
-        double altura = 0;
         String nome = sc.nextLine();
+        int peso = sc.nextInt();
+        int altura = sc.nextInt();
+        
 
         double imc = calcularIMC(peso,altura);
         String classificaçao = classificarIMC(imc);
